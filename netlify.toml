@@ -1,6 +1,9 @@
 [build]
   publish = ".next"
   command = "npm run build"
+  
+  [[plugins]]
+    package = "/plugins/test-env-plugin"
 
   [build.environment]
-  TEST = "//recycle2.furniturechoicelab.com/recycling-tool/"
+  NEXT_PUBLIC_FNC_RECYCLING_TOOL_URL = "thequickbrownfoxjumpsovertheextremelylazydogblablablacksheephaveyouanywool"
